@@ -48,3 +48,51 @@
  2113  terraform plan -destroy -out destroy-plan
  2114  terraform apply "destroy-plan"
 
+ 1120  ls
+ 1121  history > Day1_History.txt
+ 1122  vim Day1_History.txt
+ 1123  ls
+ 1124  git add . ; git commit -m "02-CLI-Excutions"; git push 
+ 1125  ls
+ 1126  git pull
+ 1127  ls
+ 1128  cd 03-Resources/
+ 1129  ls
+ 1130  rm -rf terraform.tfstate* 
+ 1131  ls
+ 1132  ls -a 
+ 1133  mv ../02-CLI-Excutions/.terraform . 
+ 1134  ls
+ 1135  vim resource.tf 
+ 1136  ls
+ 1137  terraform plan 
+ 1138  vim resource.tf 
+ 1139  terraform plan 
+ 1140  vim resource.tf 
+ 1141  terraform plan 
+ 1142  terraform apply --auto-approve
+ 1143  terraform destroy --auto-approve
+ 1144  ls
+ 1145  vim resource.tf 
+ 1146  terraform apply --auto-approve
+ 1147  terraform destroy --auto-approve
+ 1148  ls
+ 1149  vim resource.tf 
+ 1150  terraform apply --auto-approve
+ 1151  terraform destroy 
+ 1152  ls
+ 1153  vi resource.tf 
+ 1154  terraform apply 
+ 1155  vim resource.tf 
+ 1156  terraform apply 
+ 1157  terraform destroy --auto-approve 
+ 1158  terraform plan 
+ 1159  terraform destroy -target aws_instance.frontend --auto-approve 
+ 1160  ls
+ 1161  vim resource.tf 
+ 1162  terraform destroy --auto-approve 
+ 1163  ls
+ 1164  cd ..
+ 1165  ls
+ 1166  history 
+ 1167  history  >> Day1_History.txt 
