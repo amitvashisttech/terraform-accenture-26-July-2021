@@ -1,0 +1,50 @@
+ 2066  terraform plan
+ 2067  ls
+ 2068  mv ../01-First-Deployment/.terraform .
+ 2069  ls
+ 2070  cd .terraform/
+ 2071  ls
+ 2072  cd plugins/
+ 2073  ls
+ 2074  cd linux_amd64/
+ 2075  ls
+ 2076  cd ../../../
+ 2077  ls
+ 2078  du -sh *
+ 2079  du -sh .terraform/
+ 2080  terraform plan
+ 2081  terraform plan -out build-plan
+ 2082  ls
+ 2083  cat build-plan
+ 2084  xterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256color
+ 2085  ls
+ 2086  vim first_deployment.tf
+ 2087  terraform plan
+ 2088  terraform show build-plan
+ 2089  terraform apply  build-plan
+ 2090  terraform show
+ 2091  terraform refresh
+ 2092  terraform show
+ 2093  terraform apply  build-plan
+ 2094  terraform plan
+ 2095  terraform apply
+ 2096  cat first_deployment.tf
+ 2097  vim first_deployment.tf
+ 2098  terraform apply
+ 2099  vim first_deployment.tf
+ 2100  terraform apply
+ 2101  ls
+ 2102  ls -ltr .terraform/plugins/linux_amd64/
+ 2103  ls
+ 2104  terraform destroy
+ 2105  ls
+ 2106  rm -f build-plan
+ 2107  ls
+ 2108  rm -rf terraform.tfstate*
+ 2109  terraform plan -out build-plan
+ 2110  terraform apply "build-plan"
+ 2111  terraform plan destroy
+ 2112  terraform plan -destroy
+ 2113  terraform plan -destroy -out destroy-plan
+ 2114  terraform apply "destroy-plan"
+
