@@ -1,0 +1,28 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_elb.bar" [label = "aws_elb.bar", shape = "box"]
+		"[root] aws_iam_user.lb" [label = "aws_iam_user.lb", shape = "box"]
+		"[root] provider.aws" [label = "provider.aws", shape = "diamond"]
+		"[root] var.az" [label = "var.az", shape = "note"]
+		"[root] var.elb_name" [label = "var.elb_name", shape = "note"]
+		"[root] var.region" [label = "var.region", shape = "note"]
+		"[root] var.timeout" [label = "var.timeout", shape = "note"]
+		"[root] var.usernumber" [label = "var.usernumber", shape = "note"]
+		"[root] aws_elb.bar" -> "[root] provider.aws"
+		"[root] aws_elb.bar" -> "[root] var.az"
+		"[root] aws_elb.bar" -> "[root] var.elb_name"
+		"[root] aws_elb.bar" -> "[root] var.timeout"
+		"[root] aws_iam_user.lb" -> "[root] provider.aws"
+		"[root] aws_iam_user.lb" -> "[root] var.usernumber"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] aws_elb.bar"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] aws_iam_user.lb"
+		"[root] provider.aws (close)" -> "[root] aws_elb.bar"
+		"[root] provider.aws (close)" -> "[root] aws_iam_user.lb"
+		"[root] provider.aws" -> "[root] var.region"
+		"[root] root" -> "[root] meta.count-boundary (EachMode fixup)"
+		"[root] root" -> "[root] provider.aws (close)"
+	}
+}
+

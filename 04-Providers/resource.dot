@@ -1,0 +1,20 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] aws_instance.frontend_east" [label = "aws_instance.frontend_east", shape = "box"]
+		"[root] aws_instance.frontend_west" [label = "aws_instance.frontend_west", shape = "box"]
+		"[root] provider.aws" [label = "provider.aws", shape = "diamond"]
+		"[root] provider.aws.amit" [label = "provider.aws.amit", shape = "diamond"]
+		"[root] aws_instance.frontend_east" -> "[root] provider.aws"
+		"[root] aws_instance.frontend_west" -> "[root] provider.aws.amit"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] aws_instance.frontend_east"
+		"[root] meta.count-boundary (EachMode fixup)" -> "[root] aws_instance.frontend_west"
+		"[root] provider.aws (close)" -> "[root] aws_instance.frontend_east"
+		"[root] provider.aws.amit (close)" -> "[root] aws_instance.frontend_west"
+		"[root] root" -> "[root] meta.count-boundary (EachMode fixup)"
+		"[root] root" -> "[root] provider.aws (close)"
+		"[root] root" -> "[root] provider.aws.amit (close)"
+	}
+}
+
