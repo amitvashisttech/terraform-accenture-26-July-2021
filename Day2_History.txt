@@ -1,0 +1,100 @@
+ 1935  ls
+ 1936  terraform plan 
+ 1937  vim resource.tf 
+ 1938  terraform plan 
+ 1939  vim resource.tf 
+ 1940  terraform plan 
+ 1941  terraform apply --auto-approve
+ 1942  terraform destroy --auto-approve
+ 1943  ls
+ 1944  vim resource.tf 
+ 1945  terraform apply --auto-approve
+ 1946  terraform destroy --auto-approve
+ 1947  ls
+ 1948  vim resource.tf 
+ 1949  terraform apply --auto-approve
+ 1950  terraform destroy 
+ 1951  ls
+ 1952  vi resource.tf 
+ 1953  terraform apply 
+ 1954  vim resource.tf 
+ 1955  terraform apply 
+ 1956  terraform destroy --auto-approve 
+ 1957  terraform plan 
+ 1958  terraform destroy -target aws_instance.frontend --auto-approve 
+ 1959  ls
+ 1960  vim resource.tf 
+ 1961  terraform destroy --auto-approve 
+ 1962  ls
+ 1963  cd ..
+ 1964  ls
+ 1965  history 
+ 1966  history  >> Day1_History.txt 
+ 1967  ls
+ 1968  git add . ; git commit -m "03-Resources"; git push 
+ 1969  ls
+ 1970  cd 04-Providers/
+ 1971  ls
+ 1972  vim provider.tf 
+ 1973  ls
+ 1974  terraform init 
+ 1975  ls -ltr 
+ 1976  ls -a 
+ 1977  ls -R .terraform
+ 1978  ls -R ../03-Resources/.terraform
+ 1979  vim provider.tf 
+ 1980  ls
+ 1981  terraform apply --auto-approve 
+ 1982  ls
+ 1983  cat provider.tf 
+ 1984  terraform apply --auto-approve 
+ 1985  terraform show 
+ 1986  vim provider.tf 
+ 1987  terraform destroy --auto-approve 
+ 1988  cd terraform-accenture-26-July-2021/
+ 1989  cd 01-First-Deployment/
+ 1990  ls
+ 1991  cat terraform.tfstate 
+ 1992  ls
+ 1993  cd ..
+ 1994  ls
+ 1995  cd 04-Providers/
+ 1996  ls
+ 1997  vim provider.tf 
+ 1998  ls
+ 1999  git add . ; git commit -m "04-Providers"; git push 
+ 2000  cd terraform-accenture-26-July-2021/
+ 2001  ls
+ 2002  cd cd 05-Variables/
+ 2003  ls
+ 2004  cd 05-Variables/
+ 2005  ls
+ 2006  cd exp2/
+ 2007  ls
+ 2008  vim main.tf 
+ 2009  ls
+ 2010  terraform init 
+ 2011  terraform plan 
+ 2012  ls
+ 2013  vim amit-example.tfvars 
+ 2014  ls
+ 2015  vim main.tf 
+ 2016  ls
+ 2017  cat main.tf 
+ 2018  ls
+ 2019  cat variables.tf 
+ 2020  vim amit-example.tfvars 
+ 2021  ls
+ 2022  terraform plan -var-file=amit-example.tfvars 
+ 2023  ls
+ 2024  vim amit-example.tfvars 
+ 2025  terraform plan -var-file=amit-example.tfvars 
+ 2026  ls
+ 2027  cd ..
+ 2028  ls
+ 2029  cd ..
+ 2030  ls
+ 2031  cat 06-Graphviz/README.md 
+ 2032  vi 06-Graphviz/README.md 
+ 2033  history 
+ 2034  history > Day2_History.txt 

@@ -8,7 +8,7 @@ apt-get install apache2 graphviz -y
 
 ## Go to the Resource Dir. & Genrate Terraform Graph. 
 ```
-cd 04-Graphviz
+cd 06-Graphviz
 terraform graph > resource.dot
 ```
 
