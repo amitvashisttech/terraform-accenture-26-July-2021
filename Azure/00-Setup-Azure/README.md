@@ -1,8 +1,10 @@
-Terraform - Azure 
-=================>
-1. Redeem Azure Pass 
-2. Open Azure CLI 
+# Terraform with Azure Cloud 
 
+#### Please follow the below steps inorder to setup Azure Account.!
+#### 1. Redeem Azure Pass 
+#### 2. Open Azure CLI 
+
+##### Now Create Azure Contributer Service Principal for terraform Auth.
 
 ```
 # az login 
@@ -23,7 +25,7 @@ Terraform - Azure
 
 
 
-## Export the Azure Auth Variable in your bash RC. 
+### Export the Azure Auth Variable in your bash RC. 
 ```
 export ARM_CLIENT_SECRET="<<password>>"
 export ARM_CLIENT_ID="<<appID>>"
