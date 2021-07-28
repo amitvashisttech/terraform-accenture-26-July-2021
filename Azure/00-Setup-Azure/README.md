@@ -32,3 +32,12 @@ export ARM_CLIENT_ID="<<appID>>"
 export ARM_SUBSCRIPTION_ID="<<subscriptionID>>"
 export ARM_TENANT_ID="<<tenant>>"
 ```
+
+### Initialize the Bashrc Variables
+```
+source /root/.bashrc
+```
+
+```
+set | grep -i ARM
+```
