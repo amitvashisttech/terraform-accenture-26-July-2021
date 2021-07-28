@@ -1,0 +1,88 @@
+2000  cd terraform-accenture-26-July-2021/
+ 2001  ls
+ 2002  cd 12-Functions/
+ 2003  ls
+ 2004  cat id_rsa.pub
+ 2005  ls
+ 2006  rm -rf terraform.tfstate*
+ 2007  ls
+ 2008  vim functions.tf
+ 2009  ls
+ 2010  mkdir exp1
+ 2011  ls
+ 2012  mv * exp1/
+ 2013  ls
+ 2014  cd exp1/
+ 2015  ls
+ 2016  cat id_rsa.pub
+ 2017  ls
+ 2018  rm -rf id_rsa.pub
+ 2019  ssh-keygen
+ 2020  ls
+ 2021  cp -rf /root/.ssh/id_rsa.pub .
+ 2022  ls
+ 2023  cat id_rsa.pub
+ 2024  ls
+ 2025  cat functions.tf
+ 2026  ls
+ 2027  terraform init
+ 2028  terraform fwt
+ 2029  terraform fmt
+ 2030  terraform apply --auto-approve
+ 2031  ssh -i /root/.ssh/id_rsa ec2-user@52.206.239.158
+ 2032  terraform show
+ 2033  terraform destroy --auto-approve
+ 2034  cd ..
+ 2035  l
+ 2036  cd ..
+ 2037  ls
+ 2038  git add . ; git commit -m "12-Functions"; git push
+ 2039  ls
+ 2040  cd 12-Functions/
+ 2041  ls
+ 2042  cp -rf exp1 exp2
+ 2043  ls
+ 2044  cd exp2/
+ 2045  ls
+ 2046  rm -rf id_rsa.pub terraform.tfstate*
+ 2047  ls
+ 2048  vim functions.tf
+ 2049  cp -rf ../exp1/.terraform .
+ 2050  ls
+ 2051  terraform init
+ 2052  terraform apply --auto-approve
+ 2053  vim functions.tf
+ 2054  terraform validate
+ 2055  terraform init
+ 2056  terraform validate
+ 2057  terraform apply --auto-approve
+ 2058  terraform show
+ 2059  vim functions.tf
+ 2060  terraform apply --auto-approve
+ 2061  ssh -i .terraform/.ssh/admin_rsa ec2-user@54.161.235.68
+ 2062  terraform destroy --auto-approve
+ 2063  ls -a .terraform/.ssh/
+ 2064  ls
+ 2065  cd ..
+ 2066  ls
+ 2067  cd exp2/
+ 2068  ls
+ 2069  rm -rf terraform.tfstate*
+ 2070  ls
+ 2071  vim functions.tf
+ 2072  ls
+ 2073  rm -rf .terraform
+ 2074  ls
+ 2075  terraform init
+ 2076  terraform apply --auto-approve
+ 2077  ls
+ 2078  ls -ltr .terraform/
+ 2079  ls -ltr .terraform/.ssh/
+ 2080  ssh -i .terraform/.ssh/admin_rsa ec2-user@100.25.219.150
+ 2081  terraform destroy  --auto-approve
+ 2082  ls
+ 2083  ls -a .terraform/.ssh/
+ 2084  cd ../../
+ 2085  ls
+ 2086  git add . ; git commit -m "12-Functions"; git push
+
