@@ -59,7 +59,7 @@ resource "aws_instance" "east_frontend" {
   }
 
  tags = {
-   Name = local.default_frontend_name
+   Name = "${local.default_frontend_name}-${count.index + 1}"
  }
   
 }
