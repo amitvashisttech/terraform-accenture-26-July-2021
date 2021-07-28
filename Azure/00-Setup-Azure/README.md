@@ -4,7 +4,7 @@
 #### 1. Redeem Azure Pass 
 #### 2. Open Azure CLI 
 
-##### Now Create Azure Contributer Service Principal for terraform Auth.
+##### Now Create Azure Contributor Service Principal for terraform Auth.
 
 ```
 # az login 
