@@ -1,0 +1,45 @@
+ 2099  cd 18-Software-Provisioning/
+ 2100  ls
+ 2101  cat backend.tf
+ 2102  cp -rf ../17-Workspaces/Remote/backend.tf .
+ 2103  ls
+ 2104  cat variables.tf
+ 2105  ls
+ 2106  vim main.tf
+ 2107  ls
+ 2108  vim main.tf
+ 2109  ls
+ 2110  vim variables.tf
+ 2111  ls
+ 2112  cd frontend/
+ 2113  ls
+ 2114  vim run_frontend.sh
+ 2115  ls
+ 2116  cd ..
+ 2117  ls
+ 2118  cp -rf ../17-Workspaces/Remote/.terraform .
+ 2119  terraform init
+ 2120  terraform apply --auto-approve
+ 2121  vim main.tf
+ 2122  terraform apply --auto-approve
+ 2123  vim main.tf
+ 2124  terraform apply --auto-approve
+ 2125  terraform show
+ 2126  cat frontend/run_frontend.sh
+ 2127  ls
+ 2128  cd ..
+ 2129  ls
+ 2130  cd ..
+ 2131  git add . ; git commit -m "18-Software-Provisioning"; git push
+ 2132  ls
+ 2133  cd AWS/
+ 2134  ls
+ 2135  cd 18-Software-Provisioning/
+ 2136  ls
+ 2137  terraform destroy  --auto-approve
+ 2138  ls
+ 2139  cd ..
+ 2140  ls
+ 2141  history
+
+
