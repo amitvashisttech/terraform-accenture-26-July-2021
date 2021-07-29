@@ -1,0 +1,29 @@
+---
+
+- hosts: 'web:&prod'
+  name: "WebServer Deployment"
+  tasks:
+  - name: Install HTTPD Packages
+    yum:  name=httpd state=present
+    when: ansible_os_family=="RedHat"
+
+  - name: Install HTTPD Packages
+    service:  name=httpd state=started 
+    when: ansible_os_family=="RedHat"
+ 
+  - name: Install Apache Packages
+    apt:  name=apache2 state=present
+    when: ansible_os_family=="Debian"
+
+  - name: Start Apache Service 
+    service: name=apache2 state=started
+    when: ansible_os_family=="Debian"
+
+  - name: Deploy Custom Web Page
+    copy: src=files/index.html dest=/var/www/html/index.html
+
+  - name: Download Mario Image
+    get_url: url="https://www.mariomayhem.com/downloads/wallpapers/7/nsmb_wp7_1280.jpg" dest=/var/www/html/mario.jpg mode=0755
+
+  - name: Deploy Custom Info Web Page
+    template: src=templates/info.j2 dest=/var/www/html/info.html
