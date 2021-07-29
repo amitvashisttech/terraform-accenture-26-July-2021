@@ -1,0 +1,26 @@
+2000  cd terraform-accenture-26-July-2021/
+ 2001  ls
+ 2002  cd Azure/
+ 2003  ls
+ 2004  cd 02-VirtualNetwork/
+ 2005  ls
+ 2006  terraform destroy --auto-approve
+ 2007  ls
+ 2008  rm -rf terraform.tfstate*
+ 2009  ls
+ 2010  cd ..
+ 2011  ls
+ 2012  cd 03-VirtualMachine/
+ 2013  ls
+ 2014  rm -rf terraform.tfstate
+ 2015  ls
+ 2016  rm -rf terraform.tfstate.backup
+ 2017  ls
+ 2018  terraform apply --auto-approve
+ 2019  terraform show
+ 2020  ls
+ 2021  ls -a .terraform/.ssh/
+ 2022  ssh -i .terraform/.ssh/admin_rsa azureuser@13.90.40.191
+ 2023  terraform destroy --auto-approve
+
+
