@@ -43,14 +43,16 @@ variable "instance_count" {
 }
 
 variable "key_name" { 
-  default = "terraform-demo"
+  default = "terraform-mindtree-keypair"
 }
 
 
 variable "pvt_key" { 
-  default = "/root/.ssh/amitvashist-terraform.pem"
+  #default = "/root/.ssh/amitvashist-terraform.pem"
+  #default = "/root/terraform-accenture-26-July-2021/AWS/19-Software-Provisioning-Ansible/.terraform/.ssh/admin_rsa"
+  default = ".terraform/.ssh/admin_rsa"
 }
 
 variable "sg_id" { 
-  default = "sg-00691bf04ae335d59"
+  default = "sg-034e6b31a24f0d764"
 }
