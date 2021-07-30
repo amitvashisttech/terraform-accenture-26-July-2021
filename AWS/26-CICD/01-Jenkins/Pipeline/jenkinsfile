@@ -1,7 +1,7 @@
 node {
      
   stage('Git-Checkout') {
-   git 'https://github.com/amitvashisttech/terraform-accenture-26-July-2021.git'
+   git branch: 'main', url: 'https://github.com/amitvashisttech/terraform-accenture-26-July-2021.git'
   }
     
  def project_path="AWS/26-CICD/01-Jenkins/Code/petclinic"
