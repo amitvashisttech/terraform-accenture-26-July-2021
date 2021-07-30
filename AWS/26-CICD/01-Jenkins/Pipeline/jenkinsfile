@@ -1,10 +1,10 @@
 node {
      
   stage('Git-Checkout') {
-   git 'https://github.com/amitvashisttech/terraform-mindtree-30Sept2020.git'
+   git 'https://github.com/amitvashisttech/terraform-accenture-26-July-2021.git'
   }
     
- def project_path="31-CICD/01-Jenkins/Code/petclinic"
+ def project_path="AWS/26-CICD/01-Jenkins/Code/petclinic"
  
  dir(project_path) {
     
@@ -35,7 +35,7 @@ node {
    
  }
 
-def project_terra="31-CICD/04-Terraform/03-Ansible-Deploy"
+def project_terra="AWS/26-CICD/04-Terraform/03-Ansible-Deploy"
 dir(project_terra) {
    stage('Prod Deployment on AWS'){
    sh label: 'terraform', script: '/usr/bin/terraform  init'

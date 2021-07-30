@@ -1,9 +1,9 @@
 variable "key_name" {
-  default = "terraform-demo"
+  default = "terraform-demo-av"
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/amitvashist-terraform.pem"
+  default = "/root/.ssh/terraform-demo-av.pem"
 }
 
 variable "us-east-zones" {
@@ -11,5 +11,5 @@ variable "us-east-zones" {
 }
 
 variable "sg-id" {
-  default = "sg-00691bf04ae335d59"
+  default = "sg-034e6b31a24f0d764"
 }
