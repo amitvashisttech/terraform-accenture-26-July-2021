@@ -9,5 +9,5 @@ apt-get update; apt-get install default-jdk maven -y
 ```
 cd /root
 wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
-java -jar jenkins.war --httpPort=8081 & 
+java -jar /root/jenkins.war --httpPort=8081 & 
 ```
